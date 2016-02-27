@@ -1,5 +1,47 @@
 # Node.js ChangeLog
 
+## 2016-03-01, Version 5.7.1 (Stable), @???
+
+### Notable changes
+
+* **governance**: The Core Technical Committee (CTC) added four new members to help guide Node.js core development: Evan Lucas, Rich Trott, Ali Ijaz Sheikh and Сковорода Никита Андреевич (Nikita Skovoroda)
+
+### Commits
+
+* [[`00660f55c8`](https://github.com/nodejs/node/commit/00660f55c8)] - **benchmark**: move string-decoder to its own category (Andreas Madsen) [#5177](https://github.com/nodejs/node/pull/5177)
+* [[`4650cb3818`](https://github.com/nodejs/node/commit/4650cb3818)] - **benchmark**: fix configuation parameters (Andreas Madsen) [#5177](https://github.com/nodejs/node/pull/5177)
+* [[`3ccb275139`](https://github.com/nodejs/node/commit/3ccb275139)] - **benchmark**: merge url.js with url-resolve.js (Andreas Madsen) [#5177](https://github.com/nodejs/node/pull/5177)
+* [[`c1e7dbffaa`](https://github.com/nodejs/node/commit/c1e7dbffaa)] - **benchmark**: move misc to categorized directories (Andreas Madsen) [#5177](https://github.com/nodejs/node/pull/5177)
+* [[`2f9fee6e8e`](https://github.com/nodejs/node/commit/2f9fee6e8e)] - **benchmark**: use strict mode (Rich Trott) [#5336](https://github.com/nodejs/node/pull/5336)
+* [[`f349a9a2cf`](https://github.com/nodejs/node/commit/f349a9a2cf)] - **build**: update Node.js logo on OSX installer (Rod Vagg) [#5401](https://github.com/nodejs/node/pull/5401)
+* [[`7f2cf9af5c`](https://github.com/nodejs/node/commit/7f2cf9af5c)] - **doc**: explicit about VS 2015 support in readme (Phillip Johnsen) [#5406](https://github.com/nodejs/node/pull/5406)
+* [[`12d3cdbfea`](https://github.com/nodejs/node/commit/12d3cdbfea)] - **doc**: remove out-of-date matter from internal docs (Rich Trott) [#5421](https://github.com/nodejs/node/pull/5421)
+* [[`43853679f7`](https://github.com/nodejs/node/commit/43853679f7)] - **doc**: copyedit util doc (Rich Trott) [#5399](https://github.com/nodejs/node/pull/5399)
+* [[`903e8d09e1`](https://github.com/nodejs/node/commit/903e8d09e1)] - **doc**: fix typo in pbkdf2Sync code sample (Marc Cuva) [#5306](https://github.com/nodejs/node/pull/5306)
+* [[`79b1c22c9f`](https://github.com/nodejs/node/commit/79b1c22c9f)] - **doc**: fix buf.readInt16LE output (Chinedu Francis Nwafili) [#5282](https://github.com/nodejs/node/pull/5282)
+* [[`e46915f2f3`](https://github.com/nodejs/node/commit/e46915f2f3)] - **doc**: note util.isError() @@toStringTag limitations (cjihrig) [#5414](https://github.com/nodejs/node/pull/5414)
+* [[`935fd21fff`](https://github.com/nodejs/node/commit/935fd21fff)] - **doc**: clarify error handling in net.createServer (Dirceu Pereira Tiegs) [#5353](https://github.com/nodejs/node/pull/5353)
+* [[`93dce6d4fe`](https://github.com/nodejs/node/commit/93dce6d4fe)] - **doc**: document fs.datasync(Sync) (Ron Korving) [#5402](https://github.com/nodejs/node/pull/5402)
+* [[`96daf51358`](https://github.com/nodejs/node/commit/96daf51358)] - **doc**: add Evan Lucas to the CTC (Rod Vagg) [#5275](https://github.com/nodejs/node/pull/5275)
+* [[`31b405d0cf`](https://github.com/nodejs/node/commit/31b405d0cf)] - **doc**: add Rich Trott to the CTC (Rod Vagg) [#5276](https://github.com/nodejs/node/pull/5276)
+* [[`bcd154e402`](https://github.com/nodejs/node/commit/bcd154e402)] - **doc**: add Ali Ijaz Sheikh to the CTC (Rod Vagg) [#5277](https://github.com/nodejs/node/pull/5277)
+* [[`9d0330c804`](https://github.com/nodejs/node/commit/9d0330c804)] - **doc**: add Сковорода Никита Андреевич to the CTC (Rod Vagg) [#5278](https://github.com/nodejs/node/pull/5278)
+* [[`365cc63783`](https://github.com/nodejs/node/commit/365cc63783)] - **doc**: add "building node with ninja" guide (Jeremiah Senkpiel) [#4767](https://github.com/nodejs/node/pull/4767)
+* [[`2b00c315e1`](https://github.com/nodejs/node/commit/2b00c315e1)] - **doc**: mention prototype check in deepStrictEqual() (cjihrig) [#5367](https://github.com/nodejs/node/pull/5367)
+* [[`ff988b3ee6`](https://github.com/nodejs/node/commit/ff988b3ee6)] - **doc,tools,test**: lint doc-based addon tests (Rich Trott) [#5427](https://github.com/nodejs/node/pull/5427)
+* [[`51db48f741`](https://github.com/nodejs/node/commit/51db48f741)] - **src,tools**: remove null sentinel from source array (Ben Noordhuis) [#5418](https://github.com/nodejs/node/pull/5418)
+* [[`03a5daba55`](https://github.com/nodejs/node/commit/03a5daba55)] - **src,tools**: drop nul byte from built-in source code (Ben Noordhuis) [#5418](https://github.com/nodejs/node/pull/5418)
+* [[`17d14f3346`](https://github.com/nodejs/node/commit/17d14f3346)] - **src,tools**: allow utf-8 in built-in js source code (Ben Noordhuis) [#5418](https://github.com/nodejs/node/pull/5418)
+* [[`22bb7c9d27`](https://github.com/nodejs/node/commit/22bb7c9d27)] - **test**: fix test runner arg regression (Stefan Budeanu) [#5446](https://github.com/nodejs/node/pull/5446)
+* [[`8c67b94b11`](https://github.com/nodejs/node/commit/8c67b94b11)] - **test**: refactor test-dgram-send-callback-recursive (Santiago Gimeno) [#5079](https://github.com/nodejs/node/pull/5079)
+* [[`2c21d34a2f`](https://github.com/nodejs/node/commit/2c21d34a2f)] - **test**: refactor test-dgram-udp4 (Santiago Gimeno) [#5339](https://github.com/nodejs/node/pull/5339)
+* [[`479a43c876`](https://github.com/nodejs/node/commit/479a43c876)] - **test**: allow passing args to executable (Stefan Budeanu) [#5376](https://github.com/nodejs/node/pull/5376)
+* [[`ff75023812`](https://github.com/nodejs/node/commit/ff75023812)] - **test**: fix test-timers.reliability on OS X (Rich Trott) [#5379](https://github.com/nodejs/node/pull/5379)
+* [[`991f82b4bd`](https://github.com/nodejs/node/commit/991f82b4bd)] - **test**: mitigate flaky test-http-agent (Rich Trott) [#5346](https://github.com/nodejs/node/pull/5346)
+* [[`0f54553a99`](https://github.com/nodejs/node/commit/0f54553a99)] - **test**: increase timeouts on some unref timers tests (Jeremiah Senkpiel) [#5352](https://github.com/nodejs/node/pull/5352)
+* [[`5ffd7430d1`](https://github.com/nodejs/node/commit/5ffd7430d1)] - **tools**: apply custom buffer lint rule to /lib only (Rich Trott) [#5371](https://github.com/nodejs/node/pull/5371)
+* [[`fa5d28f246`](https://github.com/nodejs/node/commit/fa5d28f246)] - **tools**: enable additional lint rules (Rich Trott) [#5357](https://github.com/nodejs/node/pull/5357)
+
 ## 2016-02-23, Version 5.7.0 (Stable), @rvagg
 
 ### Notable changes
